@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "95d8a1ff-e52a-445a-ad63-72b5a9fdf161",
+		"name": "MST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FORGOT PASSWORD",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "0987654321",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "mst",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"denypebriyandi\",\n    \"password\": \"1234567\",\n    \"password2\": \"1234567\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.01:3001/mst/login/forgotPassword",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"01"
+					],
+					"port": "3001",
+					"path": [
+						"mst",
+						"login",
+						"forgotPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "0987654321",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "mst",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"denypebriyandi\",\n    \"password\": \"123456\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.01:3001/mst/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"01"
+					],
+					"port": "3001",
+					"path": [
+						"mst",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REGISTRASI",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "0987654321",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "mst",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"denypebriyandi\",\n    \"password\": \"123456\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.01:3001/mst/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"01"
+					],
+					"port": "3001",
+					"path": [
+						"mst",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
